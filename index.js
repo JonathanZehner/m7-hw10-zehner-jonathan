@@ -7,16 +7,18 @@ var textarea = document.querySelector('textarea')
 // Retrieve name and note content from cookies and localstorage
 // Then apply them to elements on the page
 var nameEl = nameSpan.textContent;
-document.cookie = "name=" + nameEl;
-console.log(nameEl);
-cookieStore.get('span')
+// document.cookie = "name=" + nameEl;
+cookieStore.get('name')
   .then(function(cookieObj) {
     console.log(cookieObj);
     if (cookieObj) {
       nameEl = cookieObj.value;
+      nameSpan.textContent = nameEl;
     }
   })
-  nameSpan.textContent = nameEl;
+
+var textArea = textarea.value;
+localStorage.getItem('text')
 
 
 formEl.onsubmit = function(e) {
@@ -26,13 +28,13 @@ formEl.onsubmit = function(e) {
   var userName = nameSpan.textContent;
   document.cookie = "name=" + userName;
   console.log(userName);
-  cookieStore.get('span')
-    .then(function(cookieObj) {
-      console.log(cookieObj);
-      if (cookieObj) {
-        userName = cookieObj.value;
-      }
-    })
+  // cookieStore.get('span')
+  //   .then(function(cookieObj) {
+  //     console.log(cookieObj);
+  //     if (cookieObj) {
+  //       userName = cookieObj.value;
+  //     }
+  //   })
     nameSpan.textContent = userName;
 
   // save textarea's content to localstorage
