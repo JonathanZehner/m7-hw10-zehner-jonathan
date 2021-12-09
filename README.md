@@ -22,14 +22,14 @@ This project is to assist another developer store content of the app to the serv
 
 ### **Issues Experienced:**
 
-1.
+1. Cannot pull cookie information into the span
 
-- #### **Resolution:**
+- #### **Resolution:** I haven't been able to figure this one out
 
 ---
 
-2.
+2. Cannot pull local storage information into the form's text area
 
-- #### **Resolution:**
+- #### **Resolution:** I haven't been able to figure this one out
 
 ---
