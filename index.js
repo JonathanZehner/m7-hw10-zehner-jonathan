@@ -34,14 +34,14 @@ formEl.onsubmit = function(e) {
   this.elements.save.classList.add('emoji')
 }
 
-// clear.onclick = function() {
-//   // Clear textarea's value
-//   // Clear localstorage's content
-//   // YOUR CODE HERE
+clear.onclick = function() {
+  // Clear textarea's value
+  // Clear localstorage's content
+  // YOUR CODE HERE
 
-//   // triggers thumbs up animation
-//   this.classList.add('emoji')
-// }
+  // triggers thumbs up animation
+  this.classList.add('emoji')
+}
 
 // this code allows repeated thumbs up animations
 function endThumbsUp() {
