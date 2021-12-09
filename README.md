@@ -1,11 +1,10 @@
-
 <img style="float: right;" src="images/logo.png">
 
 m7-hw10-zehner-jonathan
 
-# Note Taking App: project to save note content to the browser's storage using *localstorage* and *cookies*
+# Note Taking App
 
-This project is to assist another developer store content of the app to the server instead of locally on the device.
+This project is to assist another developer store content of the app to the server instead of locally on the device: project to save note content to the browser's storage using _localstorage_ and _cookies_
 
 ## Coded by: Jonathan A. Zehner
 
@@ -23,14 +22,14 @@ This project is to assist another developer store content of the app to the serv
 
 ### **Issues Experienced:**
 
-1. 
+1.
 
-- #### **Resolution:** 
+- #### **Resolution:**
 
 ---
 
-2. 
+2.
 
-- #### **Resolution:** 
+- #### **Resolution:**
 
 ---
