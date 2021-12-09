@@ -24,12 +24,12 @@ This project is to assist another developer store content of the app to the serv
 
 1. Cannot pull cookie information into the span
 
-- #### **Resolution:** I haven't been able to figure this one out
+- #### **Resolution:** Re-watched lecture videos several more times; performed trial and error until I got a working version of the code. The issue was that the line of code _`nameSpan.textContent = note;`_ was not nested properly within the _`cookieStore.get('name')`_ block of code.
 
 ---
 
 2. Cannot pull local storage information into the form's text area
 
-- #### **Resolution:** I haven't been able to figure this one out
+- #### **Resolution:** I changed the variable name from _textArea_ to _note_. I also pulled the code block _`javascript var note = localStorage.getItem('note'); textarea.textContent = note;`_ out of the nested _`formEl.onsubmit =`_ function so that it is read before the user clicks the submit button.
 
 ---
