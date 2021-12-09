@@ -6,8 +6,9 @@ var textarea = document.querySelector('textarea')
 
 // Retrieve name and note content from cookies and localstorage
 // Then apply them to elements on the page
+
+//Retrieve name from cookies
 var nameEl = nameSpan.textContent;
-// document.cookie = "name=" + nameEl;
 cookieStore.get('name')
   .then(function(cookieObj) {
     console.log(cookieObj);
@@ -17,8 +18,9 @@ cookieStore.get('name')
     }
   })
 
-var textArea = textarea.value;
-localStorage.getItem('text')
+//Retrieve note from local storage
+var note = localStorage.getItem('note');
+textarea.textContent = note;
 
 
 formEl.onsubmit = function(e) {
@@ -28,21 +30,13 @@ formEl.onsubmit = function(e) {
   var userName = nameSpan.textContent;
   document.cookie = "name=" + userName;
   console.log(userName);
-  // cookieStore.get('span')
-  //   .then(function(cookieObj) {
-  //     console.log(cookieObj);
-  //     if (cookieObj) {
-  //       userName = cookieObj.value;
-  //     }
-  //   })
-    nameSpan.textContent = userName;
+  nameSpan.textContent = userName;
 
   // save textarea's content to localstorage
   console.log('submitted')
-  var textArea = textarea.value;
-  console.log({textArea});
-  localStorage.setItem('text', textArea);
-  textarea.textContent = textArea;
+  var textAreaContent = textarea.value;
+  console.log({textAreaContent});
+  localStorage.setItem('note', textAreaContent);
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
@@ -50,8 +44,9 @@ formEl.onsubmit = function(e) {
 
 clear.onclick = function() {
   // Clear textarea's value
+  textarea.textContent = "";
   // Clear localstorage's content
-  // YOUR CODE HERE
+  localStorage.clear();
 
   // triggers thumbs up animation
   this.classList.add('emoji')
